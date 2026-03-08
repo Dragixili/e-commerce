@@ -1,4 +1,40 @@
 body {
-    display: flex;
-    justify-content: center;
+    background-color: #ECF8F6;
 }
+
+.navbar {
+    background-color: #18534F;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    border-radius: 15px;
+}
+
+.navbar img {
+    margin-left: 3%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 10%;
+}
+
+.navbar .Section {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .Section button {
+    height: 2.5em;
+    width: 7em;
+    border: none;
+    border-radius: 5px;
+    background-color: #357269;
+    color: #ECF8F6;
+    transition: 0.5s;
+}
+
+.navbar .Section button:hover {
+    margin-top: 1%;
+}
+
