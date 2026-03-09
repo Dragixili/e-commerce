@@ -2,8 +2,20 @@ body {
     background-color: #ECF8F6;
 }
 
+.hamburger {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: large;
+    border: none;
+    background-color: #18534f9f;
+    display: none;
+}
+
 .navbar {
-    background-color: #18534F;
+    position: sticky;
+    top: 20px;
+    background-color: #18534f;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -35,6 +47,16 @@ body {
 }
 
 .navbar .Section button:hover {
-    margin-top: 1%;
+    scale: 110%;
+    border: solid 1px #ECF8F6;
 }
 
+@media screen and (max-width: 600px){
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
