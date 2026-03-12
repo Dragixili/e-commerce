@@ -1,5 +1,24 @@
+@font-face {
+    font-family: "Monaspace";
+    src: url("../fonts/MonaspaceArgon-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monaspace";
+    src: url("../fonts/MonaspaceArgon-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     background-color: #ECF8F6;
+    font-family:  "Monaspace", monospace;
+}
+
+button {
+    font-family: "Monaspace", monospace;
 }
 
 .navbar {
@@ -85,7 +104,6 @@ body {
 
 .menu_mobile img {
     margin-top: 5%;
-    margin-left: 20%;
     width: 90px;
     height: 90px;
     border-radius: 100%;
@@ -102,6 +120,59 @@ body {
 
 .menu_mobile .menu button:hover {
     text-decoration: underline;
+}
+
+#formation {
+    background-color: #F4E3C1;
+    margin-top: 10%;
+    min-height: 20em;
+}
+
+#formation .info_générale {
+    display: grid;
+    margin-left: 3%;
+}
+
+#formation .info_générale .question {
+    text-decoration: underline;
+}
+
+#formation .info_générale .contenue_formation {
+    margin-top: 3%;
+    font-size: larger;
+}
+
+.mise_en_valeur {
+    position: relative;
+    cursor: pointer;
+    color: #18534f;
+}
+
+.mise_en_valeur::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #357269;
+    transition: 0.3s;
+}
+
+.mise_en_valeur:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 300px){
+    .menu_mobile {
+        display: grid;
+    }
+
+    .menu_mobile img {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 768px){
