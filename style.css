@@ -31,6 +31,7 @@ button {
     border-radius: 15px;
     padding: 0 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 100;
 }
 
 .navbar .hamburger {
@@ -123,23 +124,42 @@ button {
 }
 
 #formation {
-    background-color: #F4E3C1;
-    margin-top: 10%;
-    min-height: 20em;
+    background: linear-gradient(135deg,#F4E3C1,#f7efd9);
+    margin-top: 5%;
+    border-radius: 15px;
+    padding: 60px;
+    transition: 0.4s;
 }
 
-#formation .info_générale {
+.formation_container{
     display: grid;
-    margin-left: 3%;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    gap: 40px;
 }
 
-#formation .info_générale .question {
-    text-decoration: underline;
+.formation_image img{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 60%); 
 }
 
-#formation .info_générale .contenue_formation {
-    margin-top: 3%;
-    font-size: larger;
+.formation_text h1{
+    font-size: 2.4rem;
+}
+
+.formation_text span{
+    color: #18534f;
+}
+
+.formation_text p{
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.formation_image img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .mise_en_valeur {
@@ -162,6 +182,67 @@ button {
 .mise_en_valeur:hover::after {
     width: 100%;
     left: 0;
+}
+
+#offre {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#offre .titre_offre h1 {
+    color: #144340;
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+#offre .sous_titre_offre {
+    margin-top: 0px;
+}
+
+#offre .carte_formation {
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 1px solid #14434090;
+    max-width: 25%;
+}
+
+#offre .carte_formation .carte_text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: linear-gradient(135deg, #18534f, #357269);
+    color: #F4EDE4;
+    border-radius: 15px 15px 0px 0px;
+    text-align: left;
+}
+
+#offre .carte_formation .carte_text .premier_abo {
+    margin: 10px 0px 10px 30px;
+    font-size: larger;
+}
+
+.top_premier_abo {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.top_premier_abo img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#offre .carte_formation .carte_text .premier_abo_2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: large;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 300px){
