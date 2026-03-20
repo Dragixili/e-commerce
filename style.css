@@ -202,6 +202,11 @@ button {
     margin-top: 0px;
 }
 
+#offre .cartes {
+    display: flex;
+    justify-content: space-around;
+}
+
 #offre .carte_formation {
     margin-top: 40px;
     border-radius: 15px;
@@ -218,10 +223,11 @@ button {
     color: #F4EDE4;
     border-radius: 15px 15px 0px 0px;
     text-align: left;
+    min-height: 158px;
 }
 
 #offre .carte_formation .carte_text .premier_abo {
-    margin: 10px 0px 10px 30px;
+    margin: 10px 0px 10px 20px;
     font-size: larger;
 }
 
@@ -229,7 +235,7 @@ button {
     margin-top: 0px;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .top_premier_abo img {
@@ -240,9 +246,46 @@ button {
 #offre .carte_formation .carte_text .premier_abo_2 {
     margin-top: 10px;
     margin-bottom: 0px;
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: large;
     padding-bottom: 10px;
+}
+
+#offre .carte_formation .carte_caracteristique .espacement_carte{
+    display: grid;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+}
+
+.block img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.block p {
+    margin: 12px 0px 12px 10px;
+}
+
+.boutton_achat {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boutton_achat button {
+    border-radius: 15px;
+    background-color: #18534f;
+    color: white;
+    border: none;
+    min-width: 85%;
+    height: 30px;
+    font-size: 105%;
 }
 
 @media screen and (max-width: 300px){
